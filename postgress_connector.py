@@ -6,7 +6,7 @@ from contextlib import contextmanager
 def postgres_connection():
     conn = None
     try:
-        conn = connect(host='localhost', user='postgres', database='postgres', password='hwtest')
+        conn = connect(host='localhost', user='postgres', database='postgres', password='567234')
         yield conn
         conn.commit()
     except DatabaseError as error:
